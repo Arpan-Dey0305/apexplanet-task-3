@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Quiz & Joke</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">Interactive Quiz & Random Joke Website</div>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about-section">About Us</a></li>
+        <li><a href="#quiz-section">Quiz</a></li>
+        <li><a href="#joke-section">Joke</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <!-- Quiz Section -->
+      <div class="section" id="quiz-section">
+        <h2>Quiz Section 🎯</h2>
+        <button class="action-btn" onclick="startQuiz()">Start Quiz...</button>
+        <div id="quiz-container"></div>
+        <p id="quiz-result"></p>
+      </div>
+
+      <!-- Joke Section -->
+      <div class="section" id="joke-section">
+        <h2>
+          Joke Generator <i class="fa-solid fa-face-grin-tongue-wink"></i>
+        </h2>
+        <button class="action-btn" onclick="getJoke()">Get Joke...</button>
+        <p id="joke"></p>
+      </div>
+    </div>
+    <!-- About Us Section -->
+    <div class="section" id="about-section">
+      <h2>About Us</h2>
+      <p>
+        Welcome to the Interactive Quiz & Joke Website! 🎉<br />
+        Our goal is to combine fun learning with entertainment. You can test
+        your knowledge with quizzes and refresh your mind with random jokes.
+      </p>
+    </div>
+
+    <div id="line"><hr /></div>
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; 2025 Interactive Quiz & Joke Website | Made by Arpan |
+        <a href="https://apexplanet.in/" target="_blank">ApexPlanet</a>
+        Task-3
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

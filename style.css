@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: teal;
+  padding: 15px 30px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links li {
+  display: inline;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #f39c12;
+}
+
+header {
+  background: linear-gradient(135deg, teal, darkcyan);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px teal;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section {
+  flex: 1;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: teal;
+  margin-bottom: 15px;
+}
+
+/* Quiz Styling */
+.quiz-question {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.options button {
+  padding: 12px;
+  border: 1px solid teal;
+  border-radius: 8px;
+  background: white;
+  color: teal;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: left;
+  white-space: normal; /* ✅ allow wrapping */
+  word-wrap: break-word; /* ✅ break long words */
+}
+
+.options button:hover {
+  background: teal;
+  color: white;
+}
+
+#quiz-result {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: darkgreen;
+}
+
+/* Joke Styling */
+#joke {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #444;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+button.action-btn {
+  padding: 12px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: teal;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.action-btn:hover {
+  background: darkcyan;
+}
+
+/* About-section */
+#about-section {
+  max-width: 90%; /* ✅ flexible width */
+  width: 800px; /* ✅ keep large width for big screens */
+  min-height: 150px; /* ✅ allow content to grow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 60px auto; /* ✅ spacing instead of fixed position */
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box; /* ✅ include padding in width */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+#line {
+  margin-top: 80px;
+}
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .nav-links {
+    flex-direction: row;
+    margin-right: 10px;
+  }
+
+  .navbar .logo {
+    font-size: 16px;
+  }
+}
+
+/* Responsive Sections */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    padding: 15px;
+  }
+}
+
+/* About section mobile fix */
+@media (max-width: 600px) {
+  #about-section {
+    width: 100%; /* ✅ full width on small screens */
+    padding: 15px;
+    font-size: 14px;
+  }
+}
